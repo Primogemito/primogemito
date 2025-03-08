@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Bebas-Regular;
+    line-height: 1.5;
+    font-size: clamp(14px, 1.5vw, 18px);
+    color: #ffffff;
+    background-color: #1B1B1B;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('Bebas-Regular.ttf') format('truetype');;
+ }
+
+ /*----------------------------
+Header
+----------------------------*/
+
+.header
+{position: absolute;
+width: 100%;
+height: 7%;
+left: 0px;
+top: 0px;
+
+background: #F1FF12;}
+
+.header_line_sx
+{position: absolute;
+width: 37%;
+height: 3%;
+left: 2%;
+top: 50%;
+background: #000000;}
+
+.header_line_dx
+{position: absolute;
+width: 37%;
+height: 3%;
+right: 2%;
+top: 50%;
+background: #000000;}
+
+.header_logoesteso{
+    position: absolute;
+    display: inline-block;
+    width: 18%;
+    height: 100%;
+    left: 41%;
+
+    background-image: url(img/logoesteso.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+ 
+ }
+
+/* Media query per mobile */
+@media (max-width: 768px){
+    .header_line_sx
+{   width: 25%;
+    height: 5%;
+}
+
+.header_line_dx
+{ width: 25%;
+    height: 5%;}
+
+.header_logoesteso{
+    width: 40%;
+    left: 30%;
+ }
+}
+
+ /*----------------------------
+Box Evento
+----------------------------*/
+.box_evento{
+    position: relative;
+    display: block;
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 6%;
+
+    background-color: #131313;
+    border-radius: 30px;
+ }
+
+ .box_datievento{
+    position: relative;
+    display: inline-block;
+    width:70%;
+    height:auto;
+    left: 0px;
+    margin-top: 1%;
+    margin-left: 4%;
+ }
+ .box_datievento_riga{
+    position: relative;
+    display: block;
+    width:100%;
+    height:auto;
+ }
+
+
+ .logo_luogo{
+    position: relative;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+
+ 
+    background-image: url(img/luogo.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+
+ }
+
+ .logo_quando{
+    position: relative;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+
+ 
+    background-image: url(img/quando.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+
+ }
+
+ .logo_persone{
+    position: relative;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+
+ 
+    background-image: url(img/persone.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+
+ }
+
+ .logo_prezzo{
+    position: relative;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+
+ 
+    background-image: url(img/prezzo.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+
+ }
+ .box_prossimoevento{
+     position: absolute;
+     display: inline-block;
+     width: 20%;
+     height: 30%;
+     top: 0px;
+     right: 0px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .prossimoevento{
+    position: absolute;
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    margin-top: 2%;
+    margin-right: 1%;
+
+
+    background-image: url(img/prossimo_evento.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+
+ }
+
+ .box_prossimoevento_mobile{
+    position: relative;
+    display: none;
+    width: 100%;
+    margin-top: 13%;
+}
+
+ .prossimoevento_mobile{
+    position: relative;
+    display:none;
+    width: 70%;
+    margin-left: 14%;
+
+    background-image: url(img/prossimo_evento_esteso.png);
+    background-size: contain ;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size:cover;
+    background-position: center center;
+}
+
+ .h1_datievento{
+     display: inline-block;
+    font-size: clamp(19px, 5vw, 28px);
+ }
+ .h1_infoevento{
+    display: inline-block;
+    font-size: clamp(19px, 5vw, 22px);
+    margin-top: 2%;
+    margin-bottom: 1%;
+ }
+ .box_pulsanti{
+   position:relative;
+   display:flex;
+   justify-content:space-evenly;
+   width: 100%;
+   margin-bottom: 5%;
+   
+
+}
+
+
+
+.box [type="submit"][value="COMPILA IL FORM"]{
+    position: relative;
+    display:inline-block;
+    font-family: 'bebas';
+    font-style: normal;
+    font-size: 25px;
+
+
+    padding: 10% 20%;
+    margin-bottom: 20%;
+
+    border: 2px;
+    border-color: #e62799;
+    border-style: solid;
+
+
+    text-align: center; 
+    background: #1b1b1b;
+    outline: none; 
+    color: #e62799; 
+    border-radius: 50px; 
+    cursor: pointer;
+    
+    }
+.box [type="submit"][value="COMPILA IL FORM"]:hover{
+    background: #e62799;
+    color: #ffffff; 
+    cursor: pointer;
+    }
+
+.box [type="submit"][value="TESSERATI"]{
+    position: relative;
+    display:inline-block;
+    font-family: 'bebas';
+    font-style: normal;
+    font-size: 25px;
+
+    padding: 15% 40%;
+    margin-bottom: 20%;
+
+    border: 2px;
+    border-color: #F1FF12;
+    border-style: solid;
+
+
+    text-align: center; 
+    background: #1b1b1b;
+    outline: none; 
+    color: #F1FF12; 
+    border-radius: 50px; 
+    cursor: pointer;
+    }
+.box [type="submit"][value="TESSERATI"]:hover{
+    background: #F1FF12;
+    color: #1B1B1B; 
+    cursor: pointer;
+        }
+        
+ @media (max-width: 768px){
+     .prossimoevento_mobile{
+         display:block;
+     }
+     .box_prossimoevento_mobile{
+        display: block;
+    }
+    .box_evento{
+        position: relative;
+        display: block;
+        width: 99%;
+        height: auto;
+        margin-left: 0.5%;
+        margin-top: 0px;
+    
+        background-color: #131313;
+        border-radius: 30px;
+     }
+     .box_datievento{
+        margin-top: 5%;
+        width: 90%;
+     }
+     .logo_luogo{
+        width: 20px;
+        height: 20px;
+     }
+     .logo_quando{
+        width: 20px;
+        height: 20px;
+     }
+     .logo_persone{
+        width: 20px;
+        height: 20px;
+     }
+     .logo_prezzo{
+        width: 20px;
+        height: 20px;
+     }
+     .h1_datievento{
+       font-size: clamp(15px, 5vw, 18px);
+  
+    }
+    .h1_infoevento{
+       font-size: clamp(15px, 5vw, 15px);
+       margin-bottom: 5%;
+    }
+    .box_prossimoevento{
+        display: none;
+    }
+    .prossimoevento{
+        display: none;
+     }
+
+     .box [type="submit"][value="COMPILA IL FORM"]{
+        font-size: 15px;
+        }
+
+    .box [type="submit"][value="TESSERATI"]{
+        font-size: 15px;
+        }
+ }
+
+ /*----------------------------
+Box Storia
+----------------------------*/
+
+.box_storia{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+ }
+
+ .box_storia_sx{
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    height: 50%;
+    left: 0px;
+ }
+
+ .box_storia_dx{
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+    right: 0px;
+    margin-top: 2%;
+    margin-right: 3%;
+
+ }
+
+ .box_storia_sx_foto{
+    position: relative;
+    display:block;
+    width: 100%;
+    top: 5%;
+    left: 0px;
+
+
+
+    background-image: url(img/foto_storia.png);
+    background-size: contain ;
+    -o-background-size: contain;
+    background-repeat:no-repeat ;
+    -moz-background-size:contain;
+    background-position: center center;
+ 
+ }
+ .h1_storia{
+    font-size: clamp(22px, 5vw, 28px);
+     text-align: justify;
+      
+  }
+
+  @media (max-width: 768px){
+   .box_storia{
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 2%;
+   }
+    .h1_storia{
+        font-size: clamp(10px, 5vw, 13px);   
+      }
+    .box_storia_dx{
+        width: 70%;
+        margin-top: 5%;
+     }
+  }
+
+  /*----------------------------
+Box Contatti
+----------------------------*/
+.contatti{
+    position:absolute;
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7%;
+    left: 0px;
+    margin-bottom: 0px;
+    margin-top: 13%;
+
+
+    background: #131313;
+}
+
+ .contatto{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    height: 100%;
+ }
+
+ .contatto_logo_instagram{
+    position: absolute;
+    display:inline-block;
+    width: 50%;
+    top: 5%;
+    left: 0px;
+
+    background-image: url(img/logoinstagram.png);
+    background-size:contain;
+    -o-background-size:contain;
+    background-repeat:no-repeat ;
+    -moz-background-size: contain;
+    background-position: center center;
+ }
+
+ .contatto_logo_telegram{
+    position: absolute;
+    display:inline-block;
+    width: 50%;
+    top: 5%;
+    left: 0px;
+
+    background-image: url(img/logotelegram.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+ }
+
+ .contatto_logo_mail{
+    position: absolute;
+    display:inline-block;
+    width: 50%;
+    top: 5%;
+    left: 0px;
+
+    background-image: url(img/logomail.png);
+    background-size:contain;
+    -o-background-size: cover;
+    background-repeat:no-repeat ;
+    -moz-background-size: cover;
+    background-position: center center;
+ }
+
+ .contatto_scritta{
+    position:absolute;
+   top: 30%;
+   
+ }
+
+
+
+
+   @media (max-width: 768px){
+    .contatti{
+        bottom: 0;
+        height: 5%;
+    }
+    .contatto_logo_instagram{
+      width: 20%;
+   }
+   .contatto_logo_telegram{
+      width: 20%;
+   }
+   .contatto_logo_mail{
+      width: 20%;
+   }
+   .contatto_scritta{
+      font-size: clamp(6px, 5vw, 8px);
+      top: 35%;
+     
+   }
+
+   }
